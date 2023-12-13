@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_contenedor"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/imagenCategoria"
+        android:layout_width="150dp"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_height="150dp"
+        android:src="@drawable/login"
+        android:background="@drawable/shape_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/text_curso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desarrollo web"
+        android:textSize="25sp"
+        android:textFontWeight="900"
+        android:textColor="@color/CustomColor5"
+        android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0"
+        android:fontFamily="@font/robotobold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@id/imagenCategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/text_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programacion"
+        android:textColor="@color/md_theme_dark_onSurface"
+        android:textSize="15sp"
+        android:textFontWeight="900"
+        android:fontFamily="@font/roboregula"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@id/imagenCategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_curso"
+        />
+
+    <TextView
+        android:id="@+id/text_calificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5/5 90 registrado"
+        android:textSize="15sp"
+        android:textColor="@color/txt_cafe_suave"
+        android:textFontWeight="900"
+        android:fontFamily="@font/roboregula"
+        android:layout_marginTop="15dp"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/text_curso"
+        app:layout_constraintStart_toEndOf="@id/imagenCategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@+id/text_hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:30 AM"
+        android:textSize="15sp"
+        android:textFontWeight="900"
+        android:fontFamily="@font/roboregula"
+        android:textColor="@color/CustomColor5"
+        android:background="@drawable/shape_blue"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/text_calificacion"
+        app:layout_constraintStart_toEndOf="@id/imagenCategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AcademicoSync</string>
+    <string name="title_activity_navegacion_principal">navegacion_principal</string>
+    <string name="title_home">Home</string>
+    <string name="title_course">Cursos</string>
+    <string name="title_sesion">Sesion</string>
+    <string name="title_profile">Perfil</string>
+    <string name="title_categoria">Categorias</string>
+    <string name="title_programcion">Programacion</string>
+    <string name="title_ciencias">Ciencias de datos</string>
+    <string name="title_algoritmo">Algoritmos</string>
+    <string name="title_desarrollo">Desarrolo web</string>
+    <string name="title_ux">UX/UI</string>
+    <string name="title_tutoria">Nueva tutoria</string>
+    <string name="title_movil">Android/IOS</string>
+    <string name="title_tutoria_aprende">Aprende ya</string>
+    <string name="title_tutoria_btn">Ver mas</string>
+    <string name="title_tutoria_dos">Tutoria</string>
+</resources>

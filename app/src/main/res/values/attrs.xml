@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorError" format="color"/>
+    <attr name="colorOnError" format="color"/>
+    <attr name="colorErrorContainer" format="color"/>
+    <attr name="colorOnErrorContainer" format="color"/>
+    <attr name="harmonizeError" format="boolean"/>
+    <attr name="colorBackground" format="color"/>
+    <attr name="colorOnBackground" format="color"/>
+    <attr name="colorBackgroundContainer" format="color"/>
+    <attr name="harmonizeBackground" format="boolean"/>
+    <attr name="colorOnOnBackground" format="color"/>
+    <attr name="colorOnBackgroundContainer" format="color"/>
+    <attr name="colorOnOnBackgroundContainer" format="color"/>
+    <attr name="harmonizeOnBackground" format="boolean"/>
+
+    <attr name="btn_suave_na" format="color"/>
+
+</resources>
