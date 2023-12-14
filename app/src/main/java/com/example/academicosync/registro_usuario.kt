@@ -16,10 +16,12 @@ class registro_usuario : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth;
 
-    val email: EditText = findViewById(R.id.nameUser);
-    val password: EditText = findViewById(R.id.contrase);
-    val registro: Button = findViewById(R.id.btnIniciar)
-    val regresar: Button = findViewById(R.id.btnRegresar)
+    private lateinit var email: EditText
+    private lateinit var password: EditText
+    private lateinit var registro: Button
+    private lateinit var regresar: Button
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,12 +30,23 @@ class registro_usuario : AppCompatActivity() {
         // Initialize Firebase Auth
         auth = Firebase.auth;
 
+        // Inicializar las vistas después de inflar el diseño
+        email = findViewById(R.id.nameUser)
+        password = findViewById(R.id.contrase)
+        registro = findViewById(R.id.btnIniciar)
+        regresar = findViewById(R.id.btnRegresar)
+
         registro.setOnClickListener {
             auth.createUserWithEmailAndPassword(email.text.toString(), password.text.toString())
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d(TAG, "createUserWithEmail:success")
+                        Toast.makeText(
+                            baseContext,
+                            "Registrado con exito.",
+                            Toast.LENGTH_SHORT,
+                        ).show()
                         val user = auth.currentUser
                         // updateUI(user)
                     } else {
