@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AcademicoSync"
         tools:targetApi="31">
         <activity
+            android:name=".registro_usuario"
+            android:exported="false" />
+        <activity
             android:name=".navegacion_principal"
             android:exported="false"
             android:label="@string/title_activity_navegacion_principal" />
